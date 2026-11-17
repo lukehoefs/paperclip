@@ -25,7 +25,7 @@ function CliFallback({ hasActiveInvite = false }: { hasActiveInvite?: boolean })
       <p className="mt-2 text-sm text-muted-foreground">
         {hasActiveInvite
           ? "A bootstrap invite is already active. Check your Paperclip startup logs for the first-admin URL, or run this command on the host to rotate it:"
-          : "Run this command on the host that runs Paperclip to print a one-time first-admin invite URL:"}
+          : "Run this command on the host that runs lukethomas to print a one-time first-admin invite URL:"}
       </p>
       <pre className="mt-3 overflow-x-auto rounded-md border border-border bg-muted/30 p-3 font-mono text-xs">
 {BOOTSTRAP_FALLBACK_COMMAND}
@@ -76,7 +76,7 @@ export function BootstrapPendingPage({
   if (!claimAvailable) {
     return (
       <StateChrome>
-        <h1 className="text-xl font-semibold">This Paperclip is waiting on its first admin</h1>
+        <h1 className="text-xl font-semibold">This workspace is waiting on its first admin</h1>
         <p className="mt-2 text-sm text-muted-foreground">
           This instance runs in invite-only mode. The operator must generate a one-time first-admin invite URL
           from the host. Once you have the link, open it from this browser to finish setup.
