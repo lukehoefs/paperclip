@@ -232,8 +232,8 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  --primary: #4f46e5; /* lukethomas accent */
+  --primary-foreground: #ffffff;
   --collection-filter-active: var(--color-blue-600);
   --collection-filter-badge: var(--color-blue-600);
   --collection-filter-badge-foreground: var(--color-white);
@@ -248,7 +248,7 @@
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --ring: #6366f1;
   --focus-ring-stroke-width: 1px;
   --focus-ring-halo-width: 3px;
   --focus-ring-halo: color-mix(in srgb, var(--ring) 20%, transparent);
@@ -667,8 +667,8 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
+  --primary: #4f46e5; /* lukethomas accent */
+  --primary-foreground: #ffffff;
   --collection-filter-active: var(--color-blue-400);
   --bubble-agent: oklch(0.185 0 0);
   --secondary: oklch(0.269 0 0);
@@ -683,7 +683,7 @@
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --ring: #818cf8;
   --scrollbar-thumb: oklch(0.4 0 0);
   --scrollbar-thumb-hover: oklch(0.5 0 0);
   --chart-1: oklch(0.87 0 0);
@@ -5786,4 +5786,12 @@ html:has(.design-proposal-theme) .agent-markdown-name-field [data-slot="input"],
 /* Secret values stay hidden while typed; a multi-line field cannot use type="password". */
 .secret-value-masked {
   -webkit-text-security: disc;
+}
+
+/* lukethomas wordmark: lowercase Inter 300, -0.04em tracking (matches agent.lthops.tech). */
+.lt-wordmark {
+  font-family: "InterVariable", Inter, system-ui, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  text-transform: lowercase;
 }

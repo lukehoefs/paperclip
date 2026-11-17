@@ -1,13 +1,13 @@
 {
   "id": "/",
-  "name": "Paperclip",
-  "short_name": "Paperclip",
-  "description": "AI-powered project management and agent coordination platform",
+  "name": "lukethomas",
+  "short_name": "lukethomas",
+  "description": "AI workforce: agents, tasks and teams",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#18181b",
+  "theme_color": "#4f46e5",
   "background_color": "#18181b",
   "icons": [
     {
