@@ -450,7 +450,7 @@ EXPOSE 3100
 # tini reaps adopted orphans and forwards signals, so the exec chain below and
 # graceful shutdown are unchanged. Mirrors docker/agent-runtime/Dockerfile.base.
 ENTRYPOINT ["/usr/bin/tini", "-s", "--", "docker-entrypoint.sh"]
-CMD ["node", "server/dist-runtime/index.mjs"]
+CMD ["sh", "-c", "node server/dist-runtime/index.mjs; echo \"PAPERCLIP EXITED: $?\"; sleep 600"]
 
 # Cloud image variant (build with `--target cloud`): the production image
 # plus built bundled sandbox-provider plugins. Managed instances receive a
